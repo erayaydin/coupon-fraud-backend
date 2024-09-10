@@ -15,17 +15,17 @@ $app = Application::configure(dirname(__DIR__))
     ->withMiddleware()
     ->withExceptions(function (Exceptions $exceptions) {
         $exceptions->render(function (FingerprintRequestException $e) {
-            return response(status: 403)->json([
+            return response()->json([
                 'status' => false,
                 'message' => $e->getMessage(),
-            ]);
+            ], 403);
         });
 
         $exceptions->render(function (CouponClaimException $e) {
-            return response(status: 403)->json([
+            return response()->json([
                 'status' => false,
                 'message' => $e->getMessage(),
-            ]);
+            ], 403);
         });
     })
     ->create();
