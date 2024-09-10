@@ -1,0 +1,23 @@
+{
+    "name": "erayaydin/coupon-fraud-backend",
+    "description": "Coupon Fraud example with FingerprintJS Pro SDK",
+    "keywords": ["coupon", "fraud", "fingerprint", "fingerprintjs", "backend", "laravel"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eray Aydın",
+            "email": "erayaydinn@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
