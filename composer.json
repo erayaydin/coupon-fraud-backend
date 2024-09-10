@@ -17,7 +17,8 @@
     },
     "autoload": {
         "psr-4": {
-            "ErayAydin\\CouponFraud\\": "src/"
+            "ErayAydin\\CouponFraud\\": "src/",
+            "Database\\Seeders\\": "database/seeders/"
         }
     },
     "config": {
